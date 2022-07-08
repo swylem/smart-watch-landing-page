@@ -136,6 +136,20 @@ button:hover {
     color: #F9FAF8
 }
 
+.quotes {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    padding: 64px 224px;
+}
+
+.quotes p {
+    font-weight: bolder;
+    text-align: right;
+}   
+
 
 
 @keyframes MoveUpDown {
