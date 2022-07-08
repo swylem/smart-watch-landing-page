@@ -45,6 +45,7 @@ body {
 .header ul {
     list-style: none;
     margin-left: auto;
+    flex-wrap: wrap;
 }
 
 .header li {
@@ -137,7 +138,8 @@ button:hover {
 
 .footer {
     text-align: center;
-    color: #F9FAF8
+    color: #F9FAF8;
+    padding: 16px 0;
 }
 
 .quotes {
@@ -154,7 +156,41 @@ button:hover {
     text-align: right;
 }   
 
+.actions {
+    padding: 64px 192px;
+}
 
+.buynow-box h3,
+.buynow-box p {
+    margin: 0;
+}
+
+.buynow-box {
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #3882F6;
+    background-color: #3882F6;
+    padding: 32px 128px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.buynow-text {
+    flex-grow: 2;
+    color: #F9FAF8;
+}
+
+.buynow-box  {
+    max-width: fit-content;
+}
+
+.buynow-box .buynow-btn {
+    border: 2px solid #F9FAF8;
+    animation: MoveUpDownLower 2s linear infinite;
+}
 
 @keyframes MoveUpDown {
     0%, 100% {
@@ -162,5 +198,14 @@ button:hover {
     }
     50% {
       transform: translateY(-100px);
+    }
+}
+
+@keyframes MoveUpDownLower {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
     }
 }
