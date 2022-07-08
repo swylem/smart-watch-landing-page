@@ -97,10 +97,27 @@ button:hover {
     font-size: 96px;
 }
 
-.info-heading{
+.info-content {
+    padding: 0 64px;
+    max-width: 200px;
+    flex: 1 1 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 72px;
+    color: #1F2937;
+}
+
+.info p {
+    color: rgba(31, 41, 55, 0.7)
+}
+
+.info-heading {
     font-size: 36px;
     font-weight: bolder;
-    color: #1F2937;
     text-align: center;
     margin-top: 32px;
     margin-bottom: 64px;
@@ -111,24 +128,11 @@ button:hover {
     justify-content: center;
 }
 
-.info-content {
-    padding: 0 64px;
-    max-width: 200px;
-    flex: 1 1 0;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .info-box {
     border: 2px solid #3882F6;
     border-radius: 8px;
     width: fit-content;
     padding: 8px;
-}
-
-.info {
-    margin-bottom: 32px;
 }
 
 .footer {
